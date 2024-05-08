@@ -4,34 +4,20 @@ public class Main {
 
 	public static void main(String[] args) {
 		Prodotto prodotto = new Prodotto("Biberon", "Ottimo per bambini", 12.50, 20);
+		Smartphone prodottoSmartphone = new Smartphone("IPHONE 15 Pro Max", "Ottimo telefono marcato Apple", 1230, 22, "350123451234560", 512, 4);
+		Televisori prodottoTelevisori = new Televisori("LG OLED", "Spledità televisione", 1500, 22, "125cm", "355cm", "22cm", false);
+		Cuffie prodottoCuffie = new Cuffie("Logitech G733", "Ottime cuffie DTS X 2.0" , 144, 22, "Blu", true);
 		
-		System.out.println("Nome: " + prodotto.getNome() + "\n" +
-				"Nome Esteso: " + prodotto.getNomeEsteso() + "\n" +
-				"Descrizione: " + prodotto.getDescrizione() + "\n" +
-				"Codice Prodotto: " + prodotto.getCodice() + "\n" +
-				"Prezzo base: " + prodotto.getPrezzo() + " €" + "\n" +
-				"Prezzo ivato: " + prodotto.getPrezzoFinito() + " €" + "\n" +
-				"IVA: " + prodotto.getIva() +"%" + "\n" +
-				"Codice PAD: " + Prodotto.getCodiceEsteso(prodotto));
 		
-		prodotto.setNome("Biberon livello 2");
-		prodotto.setDescrizione("Ottimo per bambini ma meglio");
-		prodotto.setPrezzo(22.0);
-		prodotto.setIva(22);
 		
-		System.out.println("");
-		System.out.println("");
-		System.out.println("DOPO IL CAMBIO DELLE VARIABILI");
-		System.out.println("");
+		System.out.println(prodotto);
+		System.out.println();
+		System.out.println(prodottoSmartphone);
+		System.out.println();
+		System.out.println(prodottoTelevisori);
+		System.out.println();
+		System.out.println(prodottoCuffie);
 		
-		System.out.println("Nome: " + prodotto.getNome() + "\n" +
-				"Nome Esteso: " + prodotto.getNomeEsteso() + "\n" +
-				"Descrizione: " + prodotto.getDescrizione() + "\n" +
-				"Codice Prodotto: " + prodotto.getCodice() + "\n" +
-				"Prezzo base: " + prodotto.getPrezzo() + " €" + "\n" +
-				"Prezzo ivato: " + prodotto.getPrezzoFinito() + " €" + "\n" +
-				"IVA: " + prodotto.getIva() +"%" + "\n" +
-				"Codice PAD: " + Prodotto.getCodiceEsteso(prodotto));
 
 	}
 

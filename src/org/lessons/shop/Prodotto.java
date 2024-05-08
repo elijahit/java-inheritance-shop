@@ -67,4 +67,12 @@ public class Prodotto {
 		return String.format("%08d", prodotto.codice);
 	}
 	
+	@Override
+	public String toString() {
+		return "Prodotto " + "(" + nome + ")" + "\n\n" +
+				"Descrizione: " + descrizione + "\n" +
+				"Prezzo: " + prezzo + "\n" +
+				"Iva: " + iva;
+	}
+	
 }
